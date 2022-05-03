@@ -2,13 +2,12 @@ let VIDEO_ID = '<your_video_id_here'
 
 /**
  * The main function to sync the view count to the video title.
- * To be executed on a 1 minute trigger.
+ * To be executed on an 15 minute trigger.
  */
 function main() {
-  // Sync view count to title every 7.35 minutes, which is the YouTube API limit.
-  for(let i = 0; i < 30; i++) {
+  for(let i = 0; i < 2; i++) {
     updateVideoTitle(VIDEO_ID, getViewCount(VIDEO_ID));
-    Utilities.sleep(441000); // Sleep for 441 seconds.
+    Utilities.sleep(450000); // Sleep for 450 seconds to stay below YouTube API limits.
   }
 }
 
