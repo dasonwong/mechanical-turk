@@ -2,7 +2,7 @@ let VIDEO_ID = '<your_video_id_here'
 
 /**
  * The main function to sync the view count to the video title.
- * To be executed on an 15 minute trigger.
+ * To be executed on a 15 minute trigger.
  */
 function main() {
   for(let i = 0; i < 2; i++) {
