@@ -12,7 +12,7 @@ function main() {
  * Retrieves the current number of views on the video.
  */
 function getViewCount(videoId) {
-  const result = YouTube.Videos.list('snippet,statistics',{id: videoId});
+  const result = YouTube.Videos.list('snippet,statistics', {id: videoId});
   return result.items[0].statistics.viewCount;
 }
 
