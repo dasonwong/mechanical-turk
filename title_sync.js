@@ -24,6 +24,7 @@ function updateVideoTitle(videoId, viewCount) {
     id: videoId,
     snippet: {
       title: `This video has ${viewCount} views`,
+      description: '<your_video_description_here>',
       categoryId: 22
     }
   };
