@@ -23,7 +23,7 @@ function updateVideoTitle(videoId, viewCount) {
   var resource = {
     id: videoId,
     snippet: {
-      title: `This video has ${viewCount} views`,
+      title: `This video has ${viewCount.toLocaleString()} views`,
       description: '<your_video_description_here>',
       categoryId: 22
     }
